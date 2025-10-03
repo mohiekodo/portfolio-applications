@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: portfolio-postgres
+    environment:
+      POSTGRES_USER: portfolio
+      POSTGRES_PASSWORD: portfolio123
+      POSTGRES_DB: portfolio
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - portfolio-network
+
+  mongo:
+    image: mongo:7
+    container_name: portfolio-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: portfolio
+      MONGO_INITDB_ROOT_PASSWORD: portfolio123
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - portfolio-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: portfolio-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - portfolio-network
+
+volumes:
+  postgres_data:
+  mongo_data:
+  redis_data:
+
+networks:
+  portfolio-network:
+    driver: bridge

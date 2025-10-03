@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-applications",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "dev": "lerna run dev --parallel",
+    "clean": "lerna clean -y && rm -rf node_modules",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "typecheck": "lerna run typecheck"
+  },
+  "devDependencies": {
+    "lerna": "^8.0.0",
+    "typescript": "^5.0.0",
+    "prettier": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
