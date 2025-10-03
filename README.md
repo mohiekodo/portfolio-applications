@@ -6,16 +6,15 @@ A collection of full-stack TypeScript applications showcasing various technologi
 
 ```
 portfolio-applications/
-├── apps/                    # Individual portfolio applications
-│   ├── quiz-app/           # Quiz application
-│   ├── task-manager/       # Task management app
-│   ├── chat-app/           # Real-time chat
-│   └── ecommerce/          # E-commerce platform
-├── packages/               # Shared packages
-│   ├── ui-components/      # Reusable React components
-│   ├── utils/              # Common utilities
-│   ├── api-client/         # API client library
-│   └── types/              # Shared TypeScript types
+├── apps/                           # Individual portfolio applications
+│   ├── clinicez-management-app/    # Clinic management system
+│   ├── propertiez-management-app/  # Property management platform
+│   └── store-management-app/       # Store/inventory management
+├── packages/                       # Shared packages
+│   ├── ui-components/              # Reusable React components
+│   ├── utils/                      # Common utilities
+│   ├── api-client/                 # API client library
+│   └── types/                      # Shared TypeScript types
 └── lerna.json
 ```
 
@@ -43,24 +42,22 @@ npm run format
 
 ## 📱 Applications
 
-### 1. Quiz App
-**Tech Stack:** React, Express, PostgreSQL  
-**Features:** Multiple choice questions, timer, leaderboard  
+### 1. Clinicez Management App
+**Tech Stack:** React, TypeScript, Express, Tailwind CSS, PostgreSQL  
+**Features:** Patient management, appointment scheduling, medical records  
+**Structure:** Frontend/Backend/Shared workspaces  
 **Demo:** [Link to demo]
 
-### 2. Task Manager
-**Tech Stack:** React, Express, MongoDB  
-**Features:** CRUD operations, drag & drop, authentication  
+### 2. Propertiez Management App
+**Tech Stack:** React, TypeScript, Express, Tailwind CSS, PostgreSQL  
+**Features:** Property listings, tenant management, maintenance tracking  
+**Structure:** Frontend/Backend/Shared workspaces  
 **Demo:** [Link to demo]
 
-### 3. Chat App
-**Tech Stack:** React, Express, Socket.io, Redis  
-**Features:** Real-time messaging, rooms, file uploads  
-**Demo:** [Link to demo]
-
-### 4. E-commerce
-**Tech Stack:** React, Express, PostgreSQL, Stripe  
-**Features:** Products, cart, payments, orders  
+### 3. Store Management App
+**Tech Stack:** React, TypeScript, Express, Tailwind CSS, PostgreSQL  
+**Features:** Inventory management, sales tracking, supplier management  
+**Structure:** Frontend/Backend/Shared workspaces  
 **Demo:** [Link to demo]
 
 ## 🛠️ Tech Stack
@@ -93,10 +90,14 @@ npx lerna add <package> --scope=@portfolio/<app-name>
 
 ```bash
 # Run specific app
-npx lerna run dev --scope=@portfolio/quiz-app
+npx lerna run dev --scope=@portfolio/clinicez-management-app
 
 # Build specific app
-npx lerna run build --scope=@portfolio/quiz-app
+npx lerna run build --scope=@portfolio/clinicez-management-app
+
+# Other available apps:
+# @portfolio/propertiez-management-app
+# @portfolio/store-management-app
 ```
 
 ## 📝 License
