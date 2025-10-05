@@ -1,19 +1,16 @@
 {
-  "name": "@portfolio/utils",
+  "name": "@portfolio/property-management-app-shared",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf dist",
-    "test": "jest",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@portfolio/types": "^1.0.0"
+    "@portfolio/types": "*"
   },
   "devDependencies": {
-    "@types/node": "^24.6.2",
     "typescript": "^5.0.0"
   }
 }

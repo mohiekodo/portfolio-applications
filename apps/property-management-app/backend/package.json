@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio/store-management-app-backend",
+  "name": "@portfolio/property-management-app-backend",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@portfolio/store-management-app": "file:..",
+    "@portfolio/property-management-app": "file:..",
     "@portfolio/types": "file:../../../../packages/types",
     "@portfolio/utils": "file:../../../../packages/utils",
     "cors": "^2.8.5",

@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio/store-management-app-frontend",
+  "name": "@portfolio/property-management-app-frontend",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@portfolio/api-client": "file:../../../../packages/api-client",
-    "@portfolio/store-management-app": "file:..",
+    "@portfolio/property-management-app": "file:..",
     "@portfolio/types": "file:../../../../packages/types",
     "@portfolio/ui-components": "file:../../../../packages/ui-components",
     "@portfolio/utils": "file:../../../../packages/utils",

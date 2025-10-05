@@ -7,8 +7,8 @@ A collection of full-stack TypeScript applications showcasing various technologi
 ```
 portfolio-applications/
 ├── apps/                           # Individual portfolio applications
-│   ├── clinicez-management-app/    # Clinic management system
-│   ├── propertiez-management-app/  # Property management platform
+│   ├── clinic-management-app/      # Clinic management system
+│   ├── property-management-app/    # Property management platform
 │   └── store-management-app/       # Store/inventory management
 ├── packages/                       # Shared packages
 │   ├── ui-components/              # Reusable React components
@@ -42,13 +42,13 @@ npm run format
 
 ## 📱 Applications
 
-### 1. Clinicez Management App
+### 1. Clinic Management App
 **Tech Stack:** React, TypeScript, Express, Tailwind CSS, PostgreSQL  
 **Features:** Patient management, appointment scheduling, medical records  
 **Structure:** Frontend/Backend/Shared workspaces  
 **Demo:** [Link to demo]
 
-### 2. Propertiez Management App
+### 2. Property Management App
 **Tech Stack:** React, TypeScript, Express, Tailwind CSS, PostgreSQL  
 **Features:** Property listings, tenant management, maintenance tracking  
 **Structure:** Frontend/Backend/Shared workspaces  
@@ -90,13 +90,13 @@ npx lerna add <package> --scope=@portfolio/<app-name>
 
 ```bash
 # Run specific app
-npx lerna run dev --scope=@portfolio/clinicez-management-app
+npx lerna run dev --scope=@portfolio/clinic-management-app
 
 # Build specific app
-npx lerna run build --scope=@portfolio/clinicez-management-app
+npx lerna run build --scope=@portfolio/clinic-management-app
 
 # Other available apps:
-# @portfolio/propertiez-management-app
+# @portfolio/property-management-app
 # @portfolio/store-management-app
 ```
 
